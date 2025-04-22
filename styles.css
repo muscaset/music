@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    padding-top: 80px; /* Отступ сверху для контента, чтобы избежать перекрытия */
+}
+
+.navbar {
+    position: fixed; /* Фиксированное позиционирование */
+    width: 100%; /* Ширина на всю страницу */
+    z-index: 1000; /* Убедитесь, что навигация выше других элементов */
+}
+
+.container {
+    margin-top: 20px; /* Отступ сверху для контейнера */
+}
+
+h2 {
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+}
+
+.button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+blockquote {
+    border-left: 4px solid #007BFF;
+    margin: 10px 0;
+    padding-left: 10px;
+    font-style: italic;
+}
+
+#artist-choice ul li a,
+#russian-artists ul li a,
+#foreign-artists ul li a,
+#soundtracks ul li a,
+#game-soundtracks ul li a,
+#movie-soundtracks ul li a {
+    color: #000000; /* цвет ссылок на исполнителей и сборники */
+}
+
+header {
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    position: fixed; /* Фиксированное позиционирование для навигации */
+    top: 0; /* Устанавливаем навигацию в верхней части */
+    left: 0; /* Устанавливаем навигацию в левую часть */
+    right: 0; /* Устанавливаем навигацию в правую часть */
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон для навигации */
+    padding: 10px; /* Увеличиваем отступы для удобства */
+    z-index: 2; /* Устанавливаем выше фона */
+}
+
+nav a {
+    margin: 5px;
+    text-decoration: none;
+    color: #000; /* Устанавливаем цвет ссылок на черный */
+}
+
+h1, h2, h3, h4 {
+    margin-top: 20px; /* Устанавливаем отступ сверху для заголовков */
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 18px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 19px; /* Уменьшаем размер шрифта для планшетов */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top: 10px; /* Уменьшаем отступ для контейнера на мобильных устройствах */
+    }
+}
+
+.insert-image {
+    display: none; /* Скрываем изображение по умолчанию */
+}
+
+.toggle-list {
+    cursor: pointer; /* Указываем, что элемент кликабельный */
+}
